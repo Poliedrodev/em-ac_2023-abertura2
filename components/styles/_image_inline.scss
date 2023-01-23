@@ -1,4 +1,5 @@
 /* Image component style */
+
 .imagem_inline {
     clear: both;
     margin: 20px 0px 20px 0px;
@@ -45,7 +46,7 @@
         margin-bottom: 2px;
         font-size: 16px;
         color: $textColor;
-        font-family: $font-proximaNova-light;
+        font-weight: 300;
     }
 
     %caption-shared {

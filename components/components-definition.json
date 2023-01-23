@@ -89,6 +89,41 @@
         }
       }
     },
+
+    {
+      "name": "image_inline",
+      "icon": "icons/components/image.svg",
+      "label": "Imagem Inline",
+      "properties": [
+        {
+          "name": "fitting",
+          "defaultValue": "_fit-frame-height-to-content"
+        },
+        "position",
+        "style",
+        "inside-caption",
+        "text-align",
+        "letter-spacing",
+        "line-height",
+        {
+          "name": "edit-image",
+          "directiveKey": "image"
+        },
+        {
+          "name": "hyperlink",
+          "directiveKey": "hyperlink"
+        }
+      ],
+      "directiveOptions": {
+        "caption": {
+          "autofill": {
+            "source": "image",
+            "metadataField": "ContentMetaData/Description"
+          }
+        }
+      }
+    },
+
     {
       "name": "audio",
       "icon": "icons/components/icon_00_arte.svg",
@@ -3700,6 +3735,7 @@
       "name": "Imagens",
       "components": [
         "image_lumen_mais",
+        "image_inline",
         "slideshow_2_images",
         "slideshow_3_images",
         "slideshow_4_images",
@@ -4458,9 +4494,6 @@
         "container": "slideshow"
       }
     },
-    "image": {
-      "image_lumen_mais": "auto"
-    },
     "imagem_sem_margem": {
       "image_lumen_mais": "auto"
     },
@@ -4992,7 +5025,15 @@
       "css_06_boxe1": "auto",
       "css_06_boxe2": "auto",
       "css_07_boxe1": "auto"
+    },
+    "image": {
+      "image_inline": "auto",
+      "image_lumen_mais": "auto"
+    },
+    "image_lumen_mais": {
+      "image_inline": "auto"
     }
+
   },
   "shortcuts": {
     "conversionComponents": [
